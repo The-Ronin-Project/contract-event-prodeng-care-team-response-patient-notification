@@ -1,0 +1,21 @@
+{
+  "$id": "https://github.com/projectronin/care-team-response-patient-notification/blob/main/v1/care-team-response-patient-notification-v1.schema.json",
+  "title": "Care Team Response Patient Notification",
+  "description": "Schema describing an event sent to a patient when a care team response has been submitted by a provider",
+  "type": "object",
+  "properties": {
+    "careTeamResponseId": {
+      "description": "The ID of the care team response",
+      "type": "string"
+    },
+    "notifiedAt": {
+      "description": "Date/time that the notification was sent to the patient",
+      "type": "string",
+      "format": "date-time"
+    }
+  },
+  "required": [
+    "careTeamResponseId",
+    "notifiedAt"
+  ]
+}
